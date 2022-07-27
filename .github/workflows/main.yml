@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Automatic-ptero-restart
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "v2" branch
+  push:
+    branches: [ "v2" ]
+  pull_request:
+    branches: [ "v2" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          # The pterodactyl panel URL
+          PTE_PANEL_URL: https://panel.alfaurkoset.xyz
+          # the bearer token for the panel to authorize
+          PTE_BEARER_TOKEN: ptlc_h38TDAdschDVeQmCZOhh31DXHJLDrvlSngx70QQq5m8
+          # The ID of that panel that has to be restarted
+          PTE_PANEL_ID: e76336b2-042b-48f5-8b24-c74517eb9bee
