@@ -1,0 +1,16 @@
+{
+    "Bot": {
+        "TOKEN": "",
+        "CLIENT_ID": ""
+    },
+    "Guild": {
+        "ID": ""
+    },
+    "Message": {
+        "Channel": {
+            "ID": "",
+            "Name": ""
+        },
+        "ID": ""
+    }
+}
