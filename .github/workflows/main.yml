@@ -17,8 +17,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./
+      - uses: supercrafter100/Pterodactyl-Restart@v1.0
         with:
           # The pterodactyl panel URL
           PTE_PANEL_URL: https://panel.alfaurkoset.xyz
