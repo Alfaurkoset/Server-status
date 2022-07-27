@@ -1,0 +1,11 @@
+- name: Pterodactyl-Restart
+  # You may pin to the exact commit or the version.
+  # uses: supercrafter100/Pterodactyl-Restart@78e61b37178962a0772ce825e8fefa3c0a5c6098
+  uses: supercrafter100/Pterodactyl-Restart@v1.0
+  with:
+    # The pterodactyl panel URL
+    PTE_PANEL_URL: https://panel.alfaurkoset.xyz
+    # the bearer token for the panel to authorize
+    PTE_BEARER_TOKEN: ptlc_h38TDAdschDVeQmCZOhh31DXHJLDrvlSngx70QQq5m8
+    # The ID of that panel that has to be restarted
+    PTE_PANEL_ID: e76336b2-042b-48f5-8b24-c74517eb9bee
